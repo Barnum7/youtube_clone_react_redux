@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// Create a component. This component should produce HTML
+import SearchBar from './components/search_bar';
+
+const API_KEY = "AIzaSyDAf9LtyxujhHMuQpElMYZxlNL7C6iKZzw";
+
 const App = () => {
-  return <div>Calm down Batman</div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 }
 
 ReactDOM.render(<App />, document.querySelector(".container"));
-// Take this component's generated HTML and put it in the DOM
